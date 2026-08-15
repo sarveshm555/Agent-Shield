@@ -1,0 +1,33 @@
+{
+  "name": "agent-shield",
+  "version": "1.0.0",
+  "description": "AgentShield - AI Agent Security Gateway MVP designed for enterprise use cases",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "ai",
+    "security",
+    "gateway",
+    "prompt-injection",
+    "data-leakage",
+    "risk-engine",
+    "audit-log"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

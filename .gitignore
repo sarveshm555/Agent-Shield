@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.production
+.env.development
+
+# Production Build
+client/dist/
+dist/
+
+# Logs and Scratch
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
